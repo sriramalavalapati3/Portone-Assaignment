@@ -122,6 +122,10 @@ The server will start on port 8080 (or the port specified in your `.env` file).
 ]
 ```
 
+### Deployed Link
+[DeplyedLink](https://portone-assaignment.onrender.com)
+
+
 ### Postman Documentation
 
 You can find the Postman documentation for testing the API [here](https://documenter.getpostman.com/view/24325307/2sA3XJm4vP).
