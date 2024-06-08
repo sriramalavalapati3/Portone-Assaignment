@@ -12,6 +12,13 @@ app.use(morgan('dev'));
 app.use(helmet());  // Adding Helmet to enhance security
 
 // Routes
+app.get('/',async(req,res)=>{
+try {
+  res.status(200).send('welcome to home')
+} catch (error) {
+  res.status(500).send('something goes wrong')
+}
+})
 app.use('/api/v1', paymentRoutes);
 
 const PORT = process.env.PORT || 8080;   
