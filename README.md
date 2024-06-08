@@ -1,4 +1,4 @@
-# Stripe Integrated Backend
+# Stripe Integrated Backend - portone assaignment
 
 This project provides a backend for integrating with Stripe to handle payment intents, capturing payments, and creating refunds. It is built using Node.js, Express.js, and follows the MVC architecture. The project also includes Docker support for containerization.
 
@@ -17,7 +17,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/sriramalavalapati3/Portone-Assaignment.git
+    git clone https://github.com/sriramalavalapati3/portone-assaignment.git
     ```
 
 2. Install the dependencies:
@@ -36,7 +36,7 @@ Make sure you have the following installed on your machine:
 4. Start the application:
 
     ```sh
-    npm start
+    npm run dev
     ```
 
 The server will start on port 8080 (or the port specified in your `.env` file).
@@ -53,8 +53,10 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     "amount": 1000,
     "currency": "usd"
   },
-
+  ```
+   
   ** Response
+  ```json
   {
   "id": "pi_1Hh1XYZ",
   "object": "payment_intent",
@@ -62,6 +64,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
   "currency": "usd",
   "status": "requires_payment_method"
   }
+  ```
 
 
 ### Capture Payment Intent
@@ -71,6 +74,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     id: The ID of the payment intent to capture.
 
 **Response**
+```json
 {
   "id": "pi_1Hh1XYZ",
   "object": "payment_intent",
@@ -78,7 +82,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
   "currency": "usd",
   "status": "succeeded"
 }
-
+```
 ### Create Refund
 - **Endpoint:** `POST /api/v1/create_refund/:id`
 - **Description:** Creates a refund for a payment intent.
@@ -86,6 +90,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     id: The ID of the payment intent to refund.
 
 **Response**
+```json
 {
   "id": "re_1Hh1ABC",
   "object": "refund",
@@ -93,11 +98,12 @@ The server will start on port 8080 (or the port specified in your `.env` file).
   "currency": "usd",
   "status": "succeeded"
 }
-
+```
 ### Get Payment Intents
 - **Endpoint:** `GET /api/v1/get_intents`
 - **Description:** Retrieves all payment intents.
 - **Response**
+```json
 [
   {
     "id": "pi_1Hh1XYZ",
@@ -114,6 +120,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     "status": "requires_capture"
   }
 ]
+```
 
 ### Postman Documentation
 
