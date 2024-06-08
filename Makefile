@@ -1,9 +1,9 @@
 # Makefile
 
 # Variables
-DOCKER_IMAGE = Portone-Assaignment
+DOCKER_IMAGE = portone-assaignment
 DOCKER_TAG = latest
-DOCKER_CONTAINER = Portone-Assaignment
+DOCKER_CONTAINER = portone-assaignment
 
 # Targets
 .PHONY: build run stop
