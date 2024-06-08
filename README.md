@@ -17,7 +17,7 @@ Make sure you have the following installed on your machine:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/sriramalavalapati3/Portone-Assaignment.git
+    git clone https://github.com/sriramalavalapati3/portone-assaignment.git
     ```
 
 2. Install the dependencies:
@@ -53,7 +53,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     "amount": 1000,
     "currency": "usd"
   },
-
+   ```json
   ** Response
   {
   "id": "pi_1Hh1XYZ",
@@ -71,6 +71,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     id: The ID of the payment intent to capture.
 
 **Response**
+```json
 {
   "id": "pi_1Hh1XYZ",
   "object": "payment_intent",
@@ -86,6 +87,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     id: The ID of the payment intent to refund.
 
 **Response**
+```json
 {
   "id": "re_1Hh1ABC",
   "object": "refund",
@@ -98,6 +100,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
 - **Endpoint:** `GET /api/v1/get_intents`
 - **Description:** Retrieves all payment intents.
 - **Response**
+```json
 [
   {
     "id": "pi_1Hh1XYZ",
