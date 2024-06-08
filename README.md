@@ -1,4 +1,4 @@
-# Stripe Integrated Backend
+# Stripe Integrated Backend - portone assaignment
 
 This project provides a backend for integrating with Stripe to handle payment intents, capturing payments, and creating refunds. It is built using Node.js, Express.js, and follows the MVC architecture. The project also includes Docker support for containerization.
 
