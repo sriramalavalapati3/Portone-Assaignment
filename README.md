@@ -53,8 +53,10 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     "amount": 1000,
     "currency": "usd"
   },
-   ```json
+  ```
+   
   ** Response
+  ```json
   {
   "id": "pi_1Hh1XYZ",
   "object": "payment_intent",
@@ -62,6 +64,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
   "currency": "usd",
   "status": "requires_payment_method"
   }
+  ```
 
 
 ### Capture Payment Intent
@@ -79,7 +82,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
   "currency": "usd",
   "status": "succeeded"
 }
-
+```
 ### Create Refund
 - **Endpoint:** `POST /api/v1/create_refund/:id`
 - **Description:** Creates a refund for a payment intent.
@@ -95,7 +98,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
   "currency": "usd",
   "status": "succeeded"
 }
-
+```
 ### Get Payment Intents
 - **Endpoint:** `GET /api/v1/get_intents`
 - **Description:** Retrieves all payment intents.
@@ -117,6 +120,7 @@ The server will start on port 8080 (or the port specified in your `.env` file).
     "status": "requires_capture"
   }
 ]
+```
 
 ### Postman Documentation
 
