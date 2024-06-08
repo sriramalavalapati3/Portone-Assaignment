@@ -36,7 +36,7 @@ Make sure you have the following installed on your machine:
 4. Start the application:
 
     ```sh
-    npm start
+    npm run dev
     ```
 
 The server will start on port 8080 (or the port specified in your `.env` file).
